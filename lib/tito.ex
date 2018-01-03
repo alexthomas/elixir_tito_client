@@ -10,6 +10,7 @@ defmodule Tito do
 
   defp format_documentation(files) do
     Enum.reduce(files, %{}, fn(file, module_names) ->
+      IO.puts "parsing file: #{file}"
       json =
         File.read!("#{Documentation.path}/#{file}")
         |> Poison.Parser.parse!()

@@ -1,0 +1,17 @@
+{
+	"desc": "Destroy a question.",
+
+	"args": {
+    "id": {
+			"required"	: true,
+			"desc"		: "id of question"
+		},
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event question belongs to"
+		}
+	},
+
+	"errors": {
+	}
+}

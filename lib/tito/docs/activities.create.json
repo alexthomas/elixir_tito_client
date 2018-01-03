@@ -1,0 +1,60 @@
+{
+	"desc": "Create an event activity.",
+
+  "api": "dashboard",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event homepage link belongs to"
+    },
+    "name": {
+			"required"	: true
+    },
+    "capacity": {
+			"required"	: false
+		},
+		"date": {
+			"required"	: false
+		},
+		"description": {
+			"required"	: false
+		},
+		"end_time": {
+			"required"	: false
+		},
+		"name": {
+			"required"	: false
+		},
+		"private": {
+			"required"	: false,
+			"description": "Is it to be hidden on the event homepage and tickets or not. Default: false"
+		},
+		"question_ids": {
+			"required"	: false,
+			"description": "The Questions to be asked to those who register for this activity. Format: An array of Question IDs."
+		},
+		"release_ids": {
+			"required"	: false,
+			"description": "The Releases that are part of the activity. Format: An array of Release IDs."
+		},
+		"start_time": {
+			"required"	: false
+		},
+	},
+
+	"errors": {
+	}
+}
+[:name, :capacity, :private, :release_ids]
+
+
+capacity	integer
+date	date
+description	text
+end-time	time
+name	string
+private	boolean	Is it to be hidden on the event homepage and tickets or not. Default: false
+question-ids	array	The Questions to be asked to those who register for this activity. Format: An array of Question IDs.
+release-ids	array	The Releases that are part of the activity. Format: An array of Release IDs.
+start-time	time

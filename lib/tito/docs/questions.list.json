@@ -1,0 +1,13 @@
+{
+	"desc": "Lists all questions for an event.",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event question belongs to"
+		}
+	},
+
+	"errors": {
+	}
+}

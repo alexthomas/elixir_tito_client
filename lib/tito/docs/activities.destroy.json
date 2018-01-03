@@ -1,0 +1,18 @@
+{
+	"desc": "Destroy an activity for an event.",
+
+  "api": "dashboard",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event activity belongs to"
+    },
+    "id": {
+			"required"	: true
+    }
+	},
+
+	"errors": {
+	}
+}

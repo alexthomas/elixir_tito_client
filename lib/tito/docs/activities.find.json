@@ -1,0 +1,18 @@
+{
+	"desc": "Find an activity link for an event.",
+
+  "api": "dashboard",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event activity belongs to"
+    },
+    "id": {
+			"required"	: true
+    }
+	},
+
+	"errors": {
+	}
+}

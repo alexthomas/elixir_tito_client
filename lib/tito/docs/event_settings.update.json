@@ -1,0 +1,238 @@
+{
+	"desc": "Update settings for an event.",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event"
+    },
+    "additional_info": {
+			"required"	: false
+		},
+		"address": {
+			"required"	: false
+		},
+		"after_registration_closed_url": {
+			"required"	: false
+		},
+		"after_registration_complete_url": {
+			"required"	: false
+		},
+		"city": {
+			"required"	: false
+    },
+    "country": {
+			"required"	: false
+    },
+    "custom_background_color": {
+			"required"	: false
+    },
+    "custom_complete_ticket_label": {
+			"required"	: false
+    },
+    "custom_email_signature": {
+			"required"	: false
+    },
+    "custom_registration_confirmation_subject": {
+			"required"	: false
+    },
+    "custom_registration_unavailable_message": {
+			"required"	: false
+    },
+    "custom_ticket_added_subject": {
+			"required"	: false
+    },
+    "custom_ticket_gifted_subject": {
+			"required"	: false
+    },
+    "custom_ticket_message": {
+			"required"	: false
+    },
+    "custom_ticket_updated_subject": {
+			"required"	: false
+    },
+    "custom_view_ticket_label": {
+			"required"	: false
+    },
+    "default_billing_country": {
+			"required"	: false
+    },
+    "display_date": {
+			"required"	: false
+    },
+    "display_title": {
+			"required"	: false
+    },
+    "email_address": {
+			"required"	: false
+    },
+    "email_image_url": {
+			"required"	: false
+    },
+    "facebook_share_message": {
+			"required"	: false
+    },
+    "invoice_change_cutoff_days": {
+			"required"	: false
+    },
+    "invoice_extra": {
+			"required"	: false
+    },
+    "invoice_number_format": {
+			"required"	: false
+    },
+    "invoice_prefix": {
+			"required"	: false
+    },
+    "invoice_tax_details": {
+			"required"	: false
+    },
+    "logo_height": {
+			"required"	: false
+    },
+    "logo_width": {
+			"required"	: false
+    },
+    "map_latitude": {
+			"required"	: false
+    },
+    "map_longitude": {
+			"required"	: false
+    },
+    "map_link": {
+			"required"	: false
+    },
+    "map_zoomlevel": {
+			"required"	: false
+    },
+    "max_tickets_per_person": {
+			"required"	: false
+    },
+    "min_tickets_per_person": {
+			"required"	: false
+    },
+    "organization_address": {
+			"required"	: false
+    },
+    "organisation_name": {
+			"required"	: false
+    },
+    "passbook_icon_url": {
+			"required"	: false
+    },
+    "payment_instructions": {
+			"required"	: false
+    },
+    "receipt_footer_message": {
+			"required"	: false
+    },
+    "register_button_label": {
+			"required"	: false
+    },
+    "register_interest_form_label": {
+			"required"	: false
+    },
+    "requires_billing_address": {
+			"required"	: false
+    },
+    "requires_company_name": {
+			"required"	: false
+    },
+    "requires_country": {
+			"required"	: false
+    },
+    "show_additional_info": {
+			"required"	: false
+    },
+    "show_banner": {
+			"required"	: false
+    },
+    "show_company_field": {
+			"required"	: false
+    },
+    "show_date": {
+			"required"	: false
+    },
+    "show_description": {
+			"required"	: false
+    },
+    "show_discount_code_field": {
+			"required"	: false
+    },
+    "show_email_address": {
+			"required"	: false
+    },
+    "show_lanyrd_schedule": {
+			"required"	: false
+    },
+    "show_location": {
+			"required"	: false
+    },
+    "show_logo": {
+			"required"	: false
+    },
+    "show_past_tickets": {
+			"required"	: false
+    },
+    "show_phone_number_field": {
+			"required"	: false
+    },
+    "show_prices_ex_tax": {
+			"required"	: false
+    },
+    "show_register_interest_form": {
+			"required"	: false
+    },
+    "show_register_interest_form_tickets_not_on_sale": {
+			"required"	: false
+    },
+    "show_register_interest_form_tickets_on_sale": {
+			"required"	: false
+    },
+    "show_sharing_links": {
+			"required"	: false
+    },
+    "show_tickets_remaining": {
+			"required"	: false
+    },
+    "show_tickets_remaining_threshold": {
+			"required"	: false
+    },
+    "show_title": {
+			"required"	: false
+    },
+    "show_venue": {
+			"required"	: false
+    },
+    "state_province_region": {
+			"required"	: false
+    },
+    "team_signoff": {
+			"required"	: false
+    },
+    "theme": {
+			"required"	: false
+    },
+    "ticket_cancelling_enabled": {
+			"required"	: false
+    },
+    "ticket_fail_message": {
+			"required"	: false
+    },
+    "webhook_ticket": {
+			"required"	: false
+    },
+    "webhook_url": {
+			"required"	: false
+    },
+    "zip_postal_code": {
+			"required"	: false
+    },
+
+	},
+
+	"errors": {
+  }
+
+ }
+

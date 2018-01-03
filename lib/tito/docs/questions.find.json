@@ -1,0 +1,17 @@
+{
+	"desc": "Find a question for an event.",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event question belongs to"
+    },
+    "id": {
+			"required"	: true,
+			"desc"		: "id of question"
+		}
+	},
+
+	"errors": {
+	}
+}

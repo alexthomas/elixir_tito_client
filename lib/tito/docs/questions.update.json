@@ -1,0 +1,43 @@
+{
+	"desc": "Update a Question for an event",
+
+	"args": {
+		"event_id": {
+			"required"	: true,
+			"desc"		: "id of event release belongs to"
+    },
+    "field_type": {
+			"required"	: true,
+			"desc"		: "Checkboxes, Country, File, Select, Text or Textarea"
+    },
+    "id": {
+			"required"	: true
+    },
+		"title": {
+			"required"	: true
+    },
+		"description": {
+			"required"	: false
+		},
+		"required": {
+			"required"	: false,
+			"desc"		: "Does this question require a response or not. Default false"
+		},
+		"options": {
+			"required"	: false,
+			"desc"		: "A line separated list of options for this question e.g. A\nB\nC. Only applies to Checkboxes or Select field questions."
+		},
+		"options_free_text_field": {
+			"required"	: false,
+			"desc"		: "A custom label for the 'Other’ text field option if it’s enabled. Only applies to Checkboxes or Select field questions."
+		},
+		"include_free_text_field": {
+			"required"	: false,
+			"desc"		: "Should an ‘Other’ text field be included alongside this question or not. Only applies to Checkboxes or Select field questions. Default false"
+		}
+	},
+
+	"errors": {
+
+	}
+}
