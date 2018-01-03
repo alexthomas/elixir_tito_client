@@ -71,9 +71,11 @@ defmodule Tito.Client do
   def access_token(nil), do: Application.get_env(:tito, :api_key)
   def access_token(token), do: token
 
-  def url(%{url: url}), do: url
-  def url(%{account: account}), do: Application.get_env(:tito, :url, "https://api.tito.io/v2/#{account}")
-  def url(_), do: Application.get_env(:tito, :url, "https://api.tito.io/v2/#{account()}")
+  def url(%{url: url}, _), do: url
+  def url(%{account: account}, "dashboard"), do: "https://dashboard.tito.io/#{account}"
+  def url(_, "dashboard"), do: "https://dashboard.tito.io/#{account()}"
+  def url(%{account: account}, _), do: Application.get_env(:tito, :url, "https://api.tito.io/v2/#{account}")
+  def url(_,_), do: Application.get_env(:tito, :url, "https://api.tito.io/v2/#{account()}")
 
   def endpoint(url, "events", %{id: id}), do: "#{url}/#{id}"
   def endpoint(url, "events", _), do: "#{url}/events"

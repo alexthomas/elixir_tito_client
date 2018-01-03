@@ -2,7 +2,7 @@ defmodule Tito.Documentation do
 
 
   defstruct [:endpoint, :module, :request_type, :function, :desc, :required_params,
-    :optional_params, :errors, :raw]
+    :optional_params, :errors, :raw, :api]
 
   def new(json, file_name) do
     IO.puts "file name: #{file_name}"
@@ -21,6 +21,7 @@ defmodule Tito.Documentation do
       optional_params: get_optional_params(json),
       errors: json["errors"],
       raw: json,
+      api: get_api(json)
     }
   end
 
@@ -57,13 +58,16 @@ defmodule Tito.Documentation do
     []
   end
 
-  def path do
-    "#{__DIR__}/docs"
-  end
-
   def get_request_type(:create), do: "post"
   def get_request_type(:update), do: "patch"
   def get_request_type(:destroy), do: "destroy"
   def get_request_type(_), do: "get"
+
+  def get_api(%{"api" => api}), do: api
+  def get_api(_), do: "default"
+
+  def path do
+    "#{__DIR__}/docs"
+  end
 
 end

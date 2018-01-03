@@ -1,0 +1,13 @@
+{
+	"desc": "Lists all releases for an event.",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event release belongs to"
+		}
+	},
+
+	"errors": {
+	}
+}

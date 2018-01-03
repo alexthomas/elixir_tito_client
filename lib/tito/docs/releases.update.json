@@ -1,0 +1,119 @@
+{
+	"desc": "Create a release.",
+
+  "api": "dashboard",
+
+	"args": {
+    "id": {
+			"required"	: true,
+			"desc"		: "id of release"
+    },
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event release belongs to"
+    },
+    "title": {
+			"required"	: true,
+			"desc"		: "title of release"
+    },
+    "description": {
+			"required"	: false,
+			"desc"		: ""
+    },
+    "enable_super_combo_summary": {
+			"required"	: false,
+			"desc"		: "For combo releases only. Include a summary of a combo in the order summary or not. Default: true"
+    },
+    "has_success_message": {
+			"required"	: false,
+			"desc"		: "Display the custom success message or not. Default: false"
+    },
+    "invoice": {
+			"required"	: false,
+			"desc"		: "Allow customers to pay by requesting an invoice rather than using a card."
+    },
+    "max_tickets_per_person": {
+			"required"	: false,
+			"desc"		: "The maximum number of tickets per registration."
+    },
+    "min_tickets_per_person": {
+			"required"	: false,
+			"desc"		: "The minimum number of tickets per registration."
+    },
+    "not_a_ticket": {
+			"required"	: false,
+			"desc"		: "Disable issuing of PDF/Apple Wallet tickets or not. For example if this release is for merchandise rather than an actual ticket. Default false"
+    },
+    "position": {
+			"required"	: false,
+			"desc"		: "The position of the release in the list of all releases for the event."
+    },
+    "quantity": {
+			"required"	: false,
+			"desc"		: "The number of tickets available."
+    },
+    "default_quantity": {
+			"required"	: false,
+			"desc"		: "The default number of tickets selected for this release on the event page. Default: 0"
+		},
+    "question_ids": {
+			"required"	: false,
+			"desc"		: "An array of the IDs of Questions attached to the release. The order of the IDs represents the order in which the questions will be asked."
+    },
+    "request_company_name": {
+			"required"	: false,
+			"desc"		: "Do registrations which include this release requrie a company name."
+    },
+    "request_vat_number": {
+			"required"	: false,
+			"desc"		: "	Do registrations which include this release require a VAT number."
+    },
+    "require_billing_address": {
+			"required"	: false,
+			"desc"		: "Do registrations which include this release require a billing address."
+    },
+    "require_email": {
+			"required"	: false,
+			"desc"		: "	Do tickets for this release require an email. Default: true"
+    },
+    "require_name": {
+			"required"	: false,
+			"desc"		: "Do tickets for this release require a name. Default: false"
+    },
+    "secret": {
+			"required"	: false,
+			"desc"		: "Is it only accessible via a secret link or is it visible to everyone on the event page. Default: false"
+    },
+    "slug": {
+			"required"	: false,
+			"desc"		: "A unique identifier for release to be used as URI"
+    },
+    "state": {
+			"required"	: false,
+			"desc"		: "100 : On sale 404 : Off sale. Default: 100"
+    },
+    "start_at": {
+			"required"	: false,
+			"desc"		: "The time when the release will go on sale."
+    },
+    "end_at": {
+			"required"	: false,
+			"desc"		: "The time when the release will go off sale."
+    },
+    "success_message_text": {
+			"required"	: false,
+			"desc"		: "A custom message to be displayed to customers after a successful order of this release."
+    },
+    "waiting_list_enabled_during_sold_out": {
+			"required"	: false,
+			"desc"		: "Enable waiting list when this release sells out or not. Default: false"
+    },
+    "archived": {
+			"required"	: false,
+			"desc"		: "Is the release archived or not. Default: false"
+    }
+	},
+
+	"errors": {
+	}
+}

@@ -36,8 +36,7 @@ Enum.each(Tito.documentation, fn({module_name, functions}) ->
       argument_value_keyword_list = Documentation.arguments_with_values(doc)
       def unquote(function_name)(unquote_splicing(arguments), optional_params \\ %{}, token \\ nil ) do
         required_params = unquote(argument_value_keyword_list)
-
-        url = Tito.Client.url(optional_params)
+        url = Tito.Client.url(optional_params, unquote(doc.api))
 
         params = optional_params
         |> Enum.reject(fn {k, _} -> !Enum.member?(unquote(doc.optional_params),  k) end)

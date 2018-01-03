@@ -1,0 +1,17 @@
+{
+	"desc": "Destroy a release.",
+
+	"args": {
+    "id": {
+			"required"	: true,
+			"desc"		: "id of release"
+		},
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event release belongs to"
+		}
+	},
+
+	"errors": {
+	}
+}
