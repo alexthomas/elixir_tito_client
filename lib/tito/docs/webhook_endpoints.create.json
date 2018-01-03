@@ -1,0 +1,27 @@
+{
+	"desc": "Create an event webhook.",
+
+  "api": "dashboard",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event webhook belongs to"
+    },
+    "url": {
+			"required"	: true,
+			"desc"		: "id of event webhook belongs to"
+    },
+    "included_triggers": {
+			"required"	: false,
+			"desc"		: "a list of triggers for webhook default: all"
+    },
+    "custom_data": {
+			"required"	: false,
+			"desc"		: "A JSON object that gets added to all webhook requests as 'custom'"
+    }
+	},
+
+	"errors": {
+	}
+}

@@ -4,13 +4,13 @@
   "api": "dashboard",
 
 	"args": {
-    "id": {
-			"required"	: true,
-			"desc"		: "id of release"
-    },
     "event_id": {
 			"required"	: true,
 			"desc"		: "id of event release belongs to"
+    },
+    "id": {
+			"required"	: true,
+			"desc"		: "id of release"
     },
     "title": {
 			"required"	: true,

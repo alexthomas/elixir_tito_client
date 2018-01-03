@@ -5,7 +5,6 @@ defmodule Tito.Documentation do
     :optional_params, :errors, :raw, :api]
 
   def new(json, file_name) do
-    IO.puts "file name: #{file_name}"
     [module_name, function_name] = String.replace(file_name, ".json", "")
     |> String.split(".", parts: 2)
 

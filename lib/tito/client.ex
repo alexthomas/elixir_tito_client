@@ -27,19 +27,21 @@ defmodule Tito.Client do
         attributes: Map.drop(params, [:id, :type])
       }
     }
+    IO.puts url
+    IO.puts headers |> inspect
+    IO.puts Poison.encode!(data) |> inspect
+    headers = headers
+    |> request_headers
+
     HTTPoison.request!(:patch, url, Poison.encode!(data), headers, [])
     |> handle_response
   end
 
-  def put(url, params \\ %{}, headers \\ []) do
-    data = %{
-      data: %{
-        id: Map.fetch!(params, :id),
-        type: Map.fetch!(params, :type),
-        attributes: Map.drop(params, [:id, :type])
-      }
-    }
-    HTTPoison.request!(:put, url, Poison.encode!(data), headers, [])
+  # def delete!(url, headers \\ [], options \\ [])
+  def destroy(url, options \\ %{}, headers \\ []) do
+    headers = headers
+    |> request_headers
+    HTTPoison.delete!(url, headers)
     |> handle_response
   end
 
@@ -50,6 +52,7 @@ defmodule Tito.Client do
     HTTPoison.get!(url, headers)
     |> handle_response
   end
+
 
   def  handle_response(%HTTPoison.Response{status_code: 200, body: body}), do: {:ok, body |> process_response_body}
   def  handle_response(%HTTPoison.Response{status_code: 201, body: body}), do: {:ok, body |> process_response_body}
@@ -71,7 +74,7 @@ defmodule Tito.Client do
   def access_token(nil), do: Application.get_env(:tito, :api_key)
   def access_token(token), do: token
 
-  def url(%{url: url}, _), do: url
+  def url(%{base_url: url}, _), do: url
   def url(%{account: account}, "dashboard"), do: "https://dashboard.tito.io/#{account}"
   def url(_, "dashboard"), do: "https://dashboard.tito.io/#{account()}"
   def url(%{account: account}, _), do: Application.get_env(:tito, :url, "https://api.tito.io/v2/#{account}")

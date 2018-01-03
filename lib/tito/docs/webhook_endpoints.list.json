@@ -1,0 +1,15 @@
+{
+	"desc": "List webhook for an event.",
+
+  "api": "dashboard",
+
+	"args": {
+    "event_id": {
+			"required"	: true,
+			"desc"		: "id of event webhook belongs to"
+		}
+	},
+
+	"errors": {
+	}
+}
