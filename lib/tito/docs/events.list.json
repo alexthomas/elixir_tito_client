@@ -1,0 +1,9 @@
+{
+	"desc": "Lists all events.",
+
+	"args": {
+	},
+
+	"errors": {
+	}
+}

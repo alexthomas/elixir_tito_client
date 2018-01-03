@@ -1,0 +1,13 @@
+{
+	"desc": "Destroy an event.",
+
+	"args": {
+		"id": {
+			"required"	: true,
+			"desc"		: "id of event"
+		}
+	},
+
+	"errors": {
+	}
+}

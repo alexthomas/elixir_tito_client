@@ -1,0 +1,59 @@
+{
+	"desc": "Create an Event",
+
+	"args": {
+		"title": {
+			"required"	: true,
+			"desc"		: "title of event"
+		},
+		"description": {
+			"required"	: false,
+			"desc"		: "markdown description of event"
+		},
+		"slug": {
+			"required"	: false,
+			"desc"		: "unique slug for event"
+		},
+		"currency": {
+			"required"	: false,
+			"desc"		: "3 letter ISO currency code e.g. GBP"
+		},
+		"start_date": {
+			"required"	: false,
+			"desc"		: "date"
+		},
+		"end_date": {
+			"required"	: false,
+			"desc"		: "date"
+		},
+		"location": {
+			"required"	: false,
+			"desc"		: "location of event"
+		},
+		"test_mode": {
+			"required"	: false,
+			"desc"		: "is the event in test mode (boolean)"
+		},
+		"private": {
+			"required"	: false,
+			"desc"		: "is it to be listed on the event’s account page or not (boolean)"
+		},
+		"live": {
+			"required"	: false,
+			"desc"		: "is it visible to the public (boolean)"
+		},
+		"logo_url": {
+			"required"	: false,
+			"desc"		: "logo url"
+		},
+		"banner_url": {
+			"required"	: false,
+			"desc"		: "banner url"
+		}
+
+	},
+
+	"errors": {
+
+	}
+}
